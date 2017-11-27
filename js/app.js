@@ -9,8 +9,14 @@ angular.module('formApp', ['ngAnimate', 'ui.router'])
   // =============================================================================
   .config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/');
-    
+
     $stateProvider
+
+      // route to show our basic form (/form)
+      .state('home', {
+        url: '/',
+        templateUrl: 'index.html'
+      })
 
       // route to show our basic form (/form)
       .state('form', {
