@@ -29,13 +29,13 @@ angular.module('formApp', ['ngAnimate', 'ui.router'])
       // url will be /form/interests
       .state('form.interests', {
         url: '/interests',
-        templateUrl: 'form-interests.html'
+        templateUrl: 'partials/form-interests.html'
       })
 
       // url will be /form/payment
       .state('form.payment', {
         url: '/payment',
-        templateUrl: 'form-payment.html'
+        templateUrl: 'partials/form-payment.html'
       });
 
     // catch all route
